@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C",
+            "type": "shell",
+            "command": "gcc",
+            "group": "build",
+            "args": [
+                "-Wall",
+                "-O0",
+                "-g",
+                "-o",
+                "../exe/luaapp",
+                "main.c",
+                "-llua5.4",
+                "-I/usr/include/lua5.4",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/project"
+            },
+            "problemMatcher": []
+        }
+    ]
+  }
